@@ -1,6 +1,7 @@
 version: '3'
 services:
-  php-easy-bbs2_app:
+  app:
+    container_name: php-easy-bbs2_app
     build:
       context: ./docker/app
     volumes:
@@ -10,7 +11,9 @@ services:
       VIRTUAL_HOST: bbs.yuzupi.com
       LETSENCRYPT_HOST: bbs.yuzupi.com
       LETSENCRYPT_EMAIL: nurugamer2@gmail.com
-  php-easy-bbs2_db:
+  db:
+    # mysqlのhostとして他のコンテナから解決される名前
+    container_name: php-easy-bbs2_db
     build:
       context: ./docker/db
     volumes:
