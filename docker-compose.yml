@@ -7,9 +7,9 @@ services:
       - ./html:/var/www/html
     environment:
       TZ: Asia/Tokyo
-      VIRTUAL_HOST: easybbs.yuzunoha.net
-      LETSENCRYPT_HOST: easybbs.yuzunoha.net
-      LETSENCRYPT_EMAIL: studysteadystandby@gmail.com
+      VIRTUAL_HOST: bbs.yuzupi.com
+      LETSENCRYPT_HOST: bbs.yuzupi.com
+      LETSENCRYPT_EMAIL: nurugamer2@gmail.com
   db:
     build:
       context: ./docker/db
