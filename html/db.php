@@ -2,7 +2,7 @@
 
 function getPdo()
 {
-    return new PDO('mysql:host=db;dbname=bbs', 'root', 'root');
+    return new PDO('mysql:host=php-easy-bbs2_db;dbname=bbs', 'root', 'root');
 }
 
 function getUserByName($name)
